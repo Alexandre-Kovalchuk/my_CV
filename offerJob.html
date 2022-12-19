@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Offer a job</title>
+</head>
+
+<body>
+   <header class="haeder">
+      <h1>Hire me</h1>
+   </header>
+   <main class="main">
+      <h3>Contact information</h3>
+      <table border="1" cellspacing="0" cellpadding="5px">
+         <tr>
+            <td><strong>Phone</strong></td>
+            <td>+380978600495</td>
+         </tr>
+         <tr>
+            <td><strong>Address</strong></td>
+            <td>Somewhere in Ukraine</td>
+         </tr>
+      </table>
+      <br>
+      <!--  <form action="">
+         <fieldset style="width: 500px;">
+            <legend>Contact form</legend>
+            
+            <div class="email">
+               <label for="enter-email">Email<span style="color: red;">*</span>:</label>
+               <input id="enter-email" type="email" name="email" placeholder="Email" required>
+            </div>
+
+            <br>
+
+            <div class="description">
+               <label style="vertical-align: top;" for="enter-comment">Description:</label>
+               <textarea name="enter-comment" id="enter-comment" rows="5"></textarea>
+            </div>
+
+            <br>
+
+            <div class="work__type">
+               <label for="work-type">Work type:</label>
+               <select id="work-type" name="work-type">
+                  <option value="">Full-time</option>
+                  <option value="">Remote work</option>
+                  <option value="">One-time project</option>
+               </select>
+            </div>
+
+            <br>
+
+            <div class="offer__job">
+               <input type="submit" value="Hire me">
+            </div>
+         </fieldset>
+      </form>
+   -->
+      <form>
+         <fieldset style="width: 500px;">
+            <legend>Contact form</legend>
+            <table>
+               <!-- Email -->
+               <tr>
+                  <td>
+                     <label for="enter-email">Email<span style="color: red;">*</span>:</label>
+                  </td>
+                  <td>
+                     <input style="width: 250px;" class="email__itext" id="enter-email" type="email" name="email"
+                        placeholder="Email" required>
+                  </td>
+               </tr>
+               <!-- Description -->
+               <tr>
+                  <!--
+                     Ще один варіант підняти текст до верху:
+                     display: flex;
+                     flex-direction: column;
+                     -->
+                  <td style="display: inline-block;"><label for="enter-comment">Description:</label></td>
+                  <td><textarea style="width: 251px;" name="enter-comment" id="enter-comment" rows="5"></textarea></td>
+               </tr>
+               <!-- Work type -->
+               <tr>
+                  <td><label for="work-type">Work type:</label></td>
+                  <td>
+                     <select class="type__itext" id="work-type" name="work-type">
+                        <option value="">Full-time</option>
+                        <option value="">Remote work</option>
+                        <option value="">One-time project</option>
+                     </select>
+                  </td>
+               </tr>
+               <!-- Offer a job -->
+               <tr>
+                  <td> <input class="job__itext" type="submit" value="Hire me"></td>
+               </tr>
+            </table>
+         </fieldset>
+      </form>
+   </main>
+   <footer>
+
+   </footer>
+</body>
+
+</html>
