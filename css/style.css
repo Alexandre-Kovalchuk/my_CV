@@ -4,13 +4,33 @@ body{
    color: #333;
 }
 .header__title{
+   width: 800px;
    font-style: oblique;
+   border-bottom: 1px solid green;
+}
+.my__photo{
+   border:1px solid green;
+   padding: 20px;
 }
 .profession__text{
 font-weight: bold;
+border-bottom:1px solid green;
+width: 800px;
 }
 .table__title{
 text-transform:uppercase ;
+background-color: rgb(73, 208, 161);
+}
+.left__text{
+   background-color: rgb(73, 208, 161);
+}
+td {
+   background-color: rgb(171, 232, 211);
+}
+.job__list,
+.work__list{
+   border-bottom:1px solid green;
+width: 800px;
 }
 /* links Eclipse */
 .link__eclips-glass,
