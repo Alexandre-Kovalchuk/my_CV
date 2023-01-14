@@ -5,139 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>CV</title>
+    <title>My-CV</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <Header class="header">
-            <div class="header__title">
-                <h1>Alex Kovalchuk</h1>
+        <div class="content">
+            <div class="summary">
+                <h2 class="title">Summary</h2>
+                <p class="summary__text">
+                    I am a professional civil engineer who is focused on the result. In my work, I value accuracy,
+                    attention to detail, and organization. Open to new knowledge and opportunities.
+                </p>
             </div>
-            <div class="header__photo">
-                <img class="my__photo" src="img/photo.jpg" alt="my photo">
+            <div class="skills">
+                <h2 class="title">Skills Highligths</h2>
+                <ul>
+                    <li>AutoCAD</li>
+                    <li>Archicad</li>
+                    <li>Компас-3D</li>
+                    <li>SCAD</li>
+                </ul>
             </div>
-        </Header>
-        <Main class="main">
-            <section class="information">
-                <div class="profession">
-                    <p class="profession__text">
-                        Civil Engenner
+            <div class="work">
+                <h2 class="title">Works Experience</h2>
+                <!-- Eclipse Cкло, -->
+                <div class="eclipse">
+                    <p><strong>Name of emploer</strong>: <a href="https://eclipse.ua/">Eclipse Cкло</a>, Dnipro</p>
+                    <p><strong>Dates of employment</strong>: 2020 - 2022</p>
+                    <p><strong>Job title</strong>: Aluminum Structural Engineer</p>
+                    <p><strong>Project/Role description</strong>:
+                    <ul>
+                        <li>Design and manufacture of aluminum structures.</li>
+                        <li>Development and production of facades of various types.</li>
+                    </ul>
                     </p>
                 </div>
-                <div class="job">
-                    <h3 class="job__title">Work experience</h3>
-                </div>
-                <div class="work__place">
-                    <table border="1" cellspacing="0" cellpadding="5px">
-                        <thead>
-                            <tr>
-                                <th class="table__title">Period:</th>
-                                <th class="table__title">Position</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!--Eclipse Cкло-->
-                            <tr>
-                                <td class="bg">2020 - 2022</td>
-                                <td class="bg">Aluminum Structural Engineer
-                                    <a href="https://eclipse.ua/">Eclipse Cкло</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2" class="left__text"> Description</td>
-                                <td class="bg">Design and manufacture of aluminum structures.</td>
-                            </tr>
-                            <tr>
-                                <td class="bg"> Development and production of facades of various types.</td>
-                            </tr>
-                            <!-- АрхПроект  -->
-                            <tr>
-                                <td class="bg">2019 - 2020</td>
-                                <td class="bg">Junior Design Engineer
-                                    <a href="http://archproject-a1.com/">АрхПроект</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3" class="left__text"> Description</td>
-                                <td class="bg">Design of industrial and civil structures.</td>
-                            </tr>
-                            <tr>
-                                <td class="bg">
-                                    Structural analysis calculations.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="bg"> Work in tandem with Chief Engineer.</td>
-                            </tr>
-                            <!-- Eclipse Aluminum -->
-                            <tr>
-                                <td class="bg">2017 - 2019</td>
-                                <td class="bg">Junior Engineer
-                                    <a href="https://eclipse.ua/">Eclipse Aluminum</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td rowspan="1" class="left__text"> Description</td>
-                                <td class="bg">Design and manufacture of aluminum structures.</td>
-                            </tr>
-                            <!-- Modern Expo -->
-                            <tr>
-                                <td class="bg">June 2016 - <br> August 2016</td>
-                                <td class="bg">Shop Equipment Assembler
-                                    <a href="https://modern-expo.eu/ua">Modern Expo</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2" class="left__text">Description</td>
-                                <td class="bg">Manufacturing and assembly modern cashboxes, <br> which provide the highest comfort
-                                    of the payment process.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="bg">
-                                    Manufacturing and assembly innovative self-checkouts and <br> self-service terminals
-                                    for modern
-                                    retail spaces.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="skills">
-                    <h3 class="skills__title">Skills:</h3>
-                </div>
-                <div class="skills__job">
-                    <ul class="job__list">
-                        <li class="job__item">AutoCAD</li>
-                        <li class="job__item">Archicad</li>
-                        <li class="job__item">Компас-3D</li>
-                        <li class="job__item">SCAD</li>
+                <!-- АрхПроект -->
+                <div class="archProject">
+                    <p><strong>Name of emploer</strong>: <a href="http://archproject-a1.com/">АрхПроект</a>, Dnipro</p>
+                    <p><strong>Dates of employment</strong>: 2019 - 2020</p>
+                    <p><strong>Job title</strong>: Junior Design Engineer</p>
+                    <p><strong>Project/Role description</strong>:
+                    <ul>
+                        <li>Design of industrial and civil structures.</li>
+                        <li>Development and production of facades of various types.</li>
+                        <li>Work in tandem with Chief Engineer.</li>
                     </ul>
+                    </p>
                 </div>
-                <div class="project">
-                    <h3 class="project__title">Projects</h3>
+                <!-- Eclipse Aluminum -->
+                <div class="eclipse__aluminum">
+                    <p><strong>Name of emploer</strong>: <a href="https://eclipse.ua/">Eclipse Aluminum</a>, Dnipro</p>
+                    <p><strong>Dates of employment</strong>: 2017 - 2019</p>
+                    <p><strong>Job title</strong>: Junior Engineer</p>
+                    <p><strong>Project/Role description</strong>:
+                    <ul>
+                        <li>Design and manufacture of aluminum structures.</li>
+                        <li>Development and production of facades of various types.</li>
+                    </ul>
+                    </p>
                 </div>
-                <div class="project__work">
-                    <ol class="work__list">
-                        <li class="work__item">
-                            Residential building in the city of Dnipro
+                <!-- Modern Expo -->
+                <div class="modern__expo">
+                    <p><strong>Name of emploer</strong>: <a href="https://modern-expo.eu/ua">Modern Expo</a>,
+                        Verkhnyodniprovsk</p>
+                    <p><strong>Dates of employment</strong>: June 2016 - August 2016</p>
+                    <p><strong>Job title</strong>: Shop Equipment Assembler</p>
+                    <p><strong>Project/Role description</strong>:
+                    <ul>
+                        <li>Manufacturing and assembly modern cashboxes, which provide the highest comfort
+                            of the payment process.
                         </li>
-                        <li class="work__item">Plan of the foundation of a residential building</li>
-                        <li class="work__item">
-                            Gold mining plant in Kazakhstan
+                        <li> Manufacturing and assembly innovative self-checkouts and self-service terminals
+                            for modern
+                            retail spaces.
                         </li>
-                        <li class="work__item">
-                            Production of facades for Bartolomeo in the city of Dnipro
-                        </li>
-                    </ol>
+                    </ul>
+                    </p>
                 </div>
-            </section>
-        </Main>
-        <footer class="footer">
-            <a href="./offerJob.html">Hire me</a>
-        </footer>
+            </div>
+            <div class="education">
+                <h2 class="title">Education</h2>
+                <div class="academy">
+                    <p><strong>Dates of studying</strong>: from 2016 - to 2019</p>
+                    <p>
+                        <strong>Name of institution</strong>: 
+                        Prydniprovska State Academy of Civil Engnnering and
+                        Arhitecture
+                    </p>
+                    <p><strong>Degree and major</strong>: Construction and civil engineering</p>
+                </div>
+                <div class="college">
+                    <p><strong>Dates of studying</strong>: from  2012 - 2016</p>
+                    <p>
+                        <strong>Name of institution</strong>: 
+                        Prydniprovskyi State Metallurgical College
+                    </p>
+                    <p><strong>Degree and major</strong>: Construction and civil engineering</p>
+                </div>
+            </div>
+        </div>
+        <aside class="aside">
+            <h1>Alex <span>Kovalchuk</span> </h1>
+            <img src="img/photo.jpg" alt="my__photo">
+            <div class="contact">
+                <h3>Contact</h3>
+                <h4>Address</h4>
+                <p>Dnipro, Ukraine</p>
+                <h4>Phone</h4>
+                <p>+380978600495</p>
+                <h4>E-mail</h4>
+                <a target="_blank" href="mailto:kovalchuk5316gmail.com">kovalchuk5316gmail.com</a>
+                <h4>Linkedin</h4>
+                <a target="_blank" href="https://www.linkedin.com/in/alex-kovalchuk-087337207/">Alex Kovalchuk</a>
+            </div>
+            <div class="language">
+                <h3>Language</h3>
+                <h4>Ukraimian - C1 </h4>
+                <h4>English - A1 </h4>
+            </div>
+        </aside>
     </div>
 </body>
 
