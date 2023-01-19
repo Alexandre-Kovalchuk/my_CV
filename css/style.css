@@ -124,9 +124,24 @@ h4 {
   color: #263036;
 }
 a {
-  color: #1c2e8c;
-  line-height: 19px;
+  color: #0048d9;
+}
+a:hover{
+color:#002266;
 }
 .language {
   padding: 35px 0 0 40px;
+}
+/* ---- */
+.hire__btn{
+  padding-bottom: 30px;
+}
+.hire__btn a {
+  color: #ffffff;
+  background: #0048d9;
+  border-radius: 6px;
+  padding: 4px 16px;
+}
+.hire__btn a:hover{
+   background: #002266;
 }

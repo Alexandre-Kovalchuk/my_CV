@@ -1,0 +1,183 @@
+body {
+  font-family: "IBM Plex Sans";
+  background-color: lightgrey;
+  color: #3b4256;
+}
+.wrapper {
+  max-width: 1024px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding-top: 50px;
+}
+.main__sub-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0 0 100px;
+}
+.main__table {
+  margin: 20px 0 0 100px;
+}
+.table__title {
+  font-size: 1.1em;
+  font-weight: 600;
+  border: 1px solid #7a7878;
+  text-align: center;
+  padding: 10px 10px;
+}
+.table__info {
+  font-size: 1.1em;
+  font-weight: 400;
+  border: 1px solid #7a7878;
+  text-align: center;
+  padding: 3px 10px;
+}
+.table__info a {
+  font-size: 1.1em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #3b4256;
+  border-bottom: 1px solid #3b4256;
+}
+.table__info a:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+.form {
+  margin: 20px 100px 0 100px;
+}
+.form__fieldset {
+  border: 1px solid #7a7878;
+  border-radius: 5px;
+}
+.form__title {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+.email {
+  margin: 10px 0 0 10px;
+}
+.email label {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.email label span {
+  color: red;
+}
+.email input {
+  display: block;
+  margin-top: 10px;
+  height: 30px;
+  width: 200px;
+  border: 1px solid #3b4256;
+  border-radius: 5px;
+  padding: 0 10px;
+  background: #f8fafc;
+}
+.email__error,
+.description__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+.email input:focus {
+  border: 2px solid #4248e7;
+  /* box-shadow: 0px 0px 5px 2px #4248e7; */
+}
+.email input:invalid:not(:placeholder-shown) {
+  border: 2px solid #ed0131;
+  /* box-shadow: 0px 0px 5px 2px #ed0131; */
+}
+.email input:valid:not(:placeholder-shown) {
+  border: 2px solid #0e6245;
+  /* box-shadow: 0px 0px 5px 2px #0e6245; */
+}
+.email input:invalid:not(:placeholder-shown) + .email__error {
+  display: block;
+}
+.description {
+  margin: 10px 0 0 10px;
+  position: relative;
+  display: inline-block;
+}
+.description label {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.description textarea {
+  display: block;
+  margin-top: 10px;
+  height: 100px;
+  width: 200px;
+  border: 1px solid #3b4256;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #f8fafc;
+}
+.description-text {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 12px;
+}
+
+.description textarea:valid:not(:placeholder-shown) {
+  border: 2px solid #0e6245;
+  /* box-shadow: 0px 0px 5px 2px #0e6245; */
+}
+
+textarea:focus {
+  border: 2px solid #4248e7;
+  /* box-shadow: 0px 0px 5px 2px #4248e7; */
+}
+.work__type {
+  margin: 10px 0 0 10px;
+}
+.work__type label {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.work__type select {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid #3b4256;
+  border-radius: 5px;
+  padding: 0 10px;
+  background: #f8fafc;
+}
+
+.work__type select:invalid {
+  border: 2px solid #ed0131;
+  /* box-shadow: 0px 0px 5px 2px #ed0131; */
+}
+.work__type select:valid {
+  border: 2px solid #0e6245;
+}
+.offer__job {
+  margin: 14px 0 0 10px;
+  padding-bottom: 14px;
+}
+.offer__job input {
+  color: #ffffff;
+  background: #0048d9;
+  border-radius: 6px;
+  padding: 4px 16px;
+}
+.offer__job input:hover{
+   background: #002266;
+}
