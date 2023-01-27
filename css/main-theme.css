@@ -1,0 +1,23 @@
+.main-theme{
+   /* color */
+   --color-main-text: #263036;
+   --color-link: #1c2e8c;
+   --color-hover: #ef830f;
+   --color-title: #1e1e1e;
+   --color-additional: #fff;
+   
+   /* background-color */
+   --background-body: #8a8383;
+   --background-main: #fcfcfc;
+   --background-aside: #86a3b4;
+   
+   /* sizes */
+   --space-five: 5px;
+   --space-ten: 10px;
+   --space-twenty: 20px;
+   --space-twenty-five: 25px;
+   --space-thirty: 30px;
+   --space-forty: 40px;
+   --space-fifty: 50px;
+   --space-big: 385px;
+   }
