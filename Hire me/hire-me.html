@@ -13,69 +13,71 @@
 <body>
    <div class="wrapper">
       <div class="wrapper__container">
-      <header class="haeder">
-         <h1 class="header__title">Hire me</h1>
-      </header>
-      <main class="main">
-         <h3 class="main__sub-title">Contact information</h3>
-         <div class="main__table">
-            <table>
-               <tr>
-                  <th class="table__title">Phone</th>
-                  <td class="table__info"><a href="tel:+380978600495">+380978600495</a></td>
-               </tr>
-               <tr>
-                  <th class="table__title">Address</th>
-                  <td class="table__info">Somewhere in Ukraine</td>
-               </tr>
-            </table>
-         </div>
-         <form class="form" action="">
-            <fieldset class="form__fieldset">
-               <legend class="form__title">Contact form</legend>
-
-               <div class="email">
-                  <label for="enter-email">Email <span>*</span>:</label>
-                  <input id="enter-email" type="email" name="email" placeholder="Email">
-                  <span class="email__error">Це поле має містити E-Mail у форматі example@gmail.com</span>
+         <header class="haeder">
+            <h1 class="header__title">Hire me</h1>
+         </header>
+         <main class="main">
+            <div class="main__container">
+               <h3 class="main__sub-title">Contact information</h3>
+               <div class="main__table">
+                  <table>
+                     <tr>
+                        <th class="table__title">Phone</th>
+                        <td class="table__info"><a href="tel:+380978600495">+380978600495</a></td>
+                     </tr>
+                     <tr>
+                        <th class="table__title">Address</th>
+                        <td class="table__info">Somewhere in Ukraine</td>
+                     </tr>
+                  </table>
                </div>
+               <form class="form" action="">
+                  <fieldset class="form__fieldset">
+                     <legend class="form__title">Contact form</legend>
 
-               <div class="description">
-                  <label for="enter-comment">Description:</label>
-                  <textarea class="enters-comment" name="enter-comment" id="enter-comment" maxlength="365"
-                     placeholder="Напишіть повідомлення"></textarea>
-                  <div class="description-text">
-                     <span class="description-text__current">0</span>
-                     /
-                     <span class="description-text__total">365</span>
-                  </div>
-               </div>
+                     <div class="email">
+                        <label for="enter-email">Email <span>*</span>:</label>
+                        <input id="enter-email" type="email" name="email" placeholder="Email">
+                        <span class="email__error">Це поле має містити E-Mail у форматі example@gmail.com</span>
+                     </div>
 
-               <div class="work__type">
-                  <label for="work-type">Work type:</label>
-                  <select id="work-type" name="work-type" required>
-                     <option value=""></option>
-                     <option value="">Full-time</option>
-                     <option value="">Remote work</option>
-                     <option value="">One-time project</option>
-                  </select>
-               </div>
+                     <div class="description">
+                        <label for="enter-comment">Description:</label>
+                        <textarea class="enters-comment" name="enter-comment" id="enter-comment" maxlength="365"
+                           placeholder="Напишіть повідомлення"></textarea>
+                        <div class="description-text">
+                           <span class="description-text__current">0</span>
+                           /
+                           <span class="description-text__total">365</span>
+                        </div>
+                     </div>
 
-               <div class="offer__job">
-                  <input type="submit" value="Hire me">
-               </div>
-            </fieldset>
-         </form>
-      </main>
-      <footer>
-      </footer>
-   </div>
+                     <div class="work__type">
+                        <label for="work-type">Work type:</label>
+                        <select id="work-type" name="work-type" required>
+                           <option value=""></option>
+                           <option value="">Full-time</option>
+                           <option value="">Remote work</option>
+                           <option value="">One-time project</option>
+                        </select>
+                     </div>
+
+                     <div class="offer__job">
+                        <input type="submit" value="Hire me">
+                     </div>
+                  </fieldset>
+               </form>
+            </div>
+         </main>
+         <footer>
+         </footer>
+      </div>
    </div>
    <script>
       const enterComment = document.querySelector('.enters-comment')
       const textCounter = document.querySelector('.description-text__current')
 
-      enterComment .addEventListener('input', onInput)
+      enterComment.addEventListener('input', onInput)
 
       function onInput(evt) {
          const length = evt.target.value.length

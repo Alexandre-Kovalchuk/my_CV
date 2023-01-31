@@ -6,12 +6,12 @@ body {
 .wrapper {
   position: relative;
 }
-.wrapper__container{
+.wrapper__container {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%);
-  width: 1024px; 
+  transform: translate(-50%, -0%);
+  width: 1024px;
   padding: 0 15px;
   background-color: #fff;
   height: 100vh;
@@ -24,13 +24,16 @@ body {
   text-align: center;
   padding-top: 50px;
 }
+.main {
+  padding: 0 100px;
+}
 .main__sub-title {
   font-size: 1.5em;
   font-weight: 600;
-  margin: 20px 0 0 100px;
+  margin: 20px 0;
 }
 .main__table {
-  margin: 20px 0 0 100px;
+  margin: 20px 0;
 }
 .table__title {
   font-size: 1.1em;
@@ -58,7 +61,7 @@ body {
   border-bottom: 1px solid red;
 }
 .form {
-  margin: 20px 100px 0 100px;
+  margin: 20px 0;
 }
 .form__fieldset {
   border: 1px solid #7a7878;
@@ -184,6 +187,40 @@ textarea:focus {
   border-radius: 6px;
   padding: 4px 16px;
 }
-.offer__job input:hover{
-   background: #002266;
+.offer__job input:hover {
+  background: #002266;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .main {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper {
+    height: 100vh;
+  }
+  .wrapper__container {
+    width: 100%;
+    height: auto;
+  }
+  .main {
+    padding: 0 15px;
+  }
+  .email,
+  .description {
+    margin-right: 10px;
+  }
+  .email input {
+    width: 100%;
+  }
+   textarea {
+    width: 370px;
+  }
 }
