@@ -3,18 +3,22 @@ body {
   background-color: lightgrey;
   color: #3b4256;
 }
+
 .wrapper {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
 .wrapper__container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -0%);
+  background-color: #ffffff;
   width: 1024px;
-  padding: 0 15px;
-  background-color: #fff;
-  height: 100vh;
+  animation-name: hire-me;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  transition: all 1s;
+
 }
 
 .header__title {
@@ -24,17 +28,21 @@ body {
   text-align: center;
   padding-top: 50px;
 }
+
 .main {
   padding: 0 100px;
 }
+
 .main__sub-title {
   font-size: 1.5em;
   font-weight: 600;
   margin: 20px 0;
 }
+
 .main__table {
   margin: 20px 0;
 }
+
 .table__title {
   font-size: 1.1em;
   font-weight: 600;
@@ -42,6 +50,7 @@ body {
   text-align: center;
   padding: 10px 10px;
 }
+
 .table__info {
   font-size: 1.1em;
   font-weight: 400;
@@ -49,6 +58,7 @@ body {
   text-align: center;
   padding: 3px 10px;
 }
+
 .table__info a {
   font-size: 1.1em;
   font-weight: 400;
@@ -56,32 +66,40 @@ body {
   color: #3b4256;
   border-bottom: 1px solid #3b4256;
 }
+
 .table__info a:hover {
   color: red;
   border-bottom: 1px solid red;
 }
+
 .form {
   margin: 20px 0;
 }
+
 .form__fieldset {
   border: 1px solid #7a7878;
   border-radius: 5px;
 }
+
 .form__title {
   font-size: 1.2em;
   font-weight: 600;
   text-align: center;
 }
+
 .email {
   margin: 10px 0 0 10px;
 }
+
 .email label {
   font-size: 1.1em;
   font-weight: 600;
 }
+
 .email label span {
   color: red;
 }
+
 .email input {
   display: block;
   margin-top: 10px;
@@ -92,6 +110,7 @@ body {
   padding: 0 10px;
   background: #f8fafc;
 }
+
 .email__error,
 .description__error {
   color: red;
@@ -101,30 +120,39 @@ body {
   margin-top: 3px;
   display: none;
 }
+
+
+
 .email input:focus {
   border: 2px solid #4248e7;
   /* box-shadow: 0px 0px 5px 2px #4248e7; */
 }
+
 .email input:invalid:not(:placeholder-shown) {
   border: 2px solid #ed0131;
   /* box-shadow: 0px 0px 5px 2px #ed0131; */
 }
+
 .email input:valid:not(:placeholder-shown) {
   border: 2px solid #0e6245;
   /* box-shadow: 0px 0px 5px 2px #0e6245; */
 }
-.email input:invalid:not(:placeholder-shown) + .email__error {
+
+.email input:invalid:not(:placeholder-shown)+.email__error {
   display: block;
 }
+
 .description {
   margin: 10px 0 0 10px;
   position: relative;
   display: inline-block;
 }
+
 .description label {
   font-size: 1.1em;
   font-weight: 600;
 }
+
 .description textarea {
   display: block;
   margin-top: 10px;
@@ -135,6 +163,7 @@ body {
   padding: 5px 10px;
   background: #f8fafc;
 }
+
 .description-text {
   position: absolute;
   right: 10px;
@@ -151,13 +180,16 @@ textarea:focus {
   border: 2px solid #4248e7;
   /* box-shadow: 0px 0px 5px 2px #4248e7; */
 }
+
 .work__type {
   margin: 10px 0 0 10px;
 }
+
 .work__type label {
   font-size: 1.1em;
   font-weight: 600;
 }
+
 .work__type select {
   position: relative;
   display: block;
@@ -174,19 +206,23 @@ textarea:focus {
   border: 2px solid #ed0131;
   /* box-shadow: 0px 0px 5px 2px #ed0131; */
 }
+
 .work__type select:valid {
   border: 2px solid #0e6245;
 }
+
 .offer__job {
   margin: 14px 0 0 10px;
   padding-bottom: 14px;
 }
+
 .offer__job input {
   color: #ffffff;
   background: #0048d9;
   border-radius: 6px;
   padding: 4px 16px;
 }
+
 .offer__job input:hover {
   background: #002266;
 }
@@ -198,29 +234,62 @@ textarea:focus {
     justify-content: center;
     width: 100%;
   }
+
   .main {
     padding: 0 50px;
   }
 }
+
 @media screen and (max-width: 450px) {
   .wrapper {
     height: 100vh;
   }
+
   .wrapper__container {
     width: 100%;
     height: auto;
   }
+
   .main {
     padding: 0 15px;
   }
+
   .email,
   .description {
     margin-right: 10px;
   }
+
   .email input {
     width: 100%;
   }
-   textarea {
+
+  textarea {
     width: 370px;
+  }
+}
+
+@keyframes hire-me {
+  0% {
+    transform: scale(200%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: scale(175%);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: scale(150%);
+    opacity: 0.5;
+  }
+
+  75% {
+    transform: scale(125%);
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
