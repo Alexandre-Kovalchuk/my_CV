@@ -1,0 +1,17 @@
+// --background-body: #1D2D44;
+// --background-main: #3E5C76;
+// --background-aside: #0D1321;
+$background-body: #5d7699;
+$background-main: #9eadba;
+$background-aside: #6a738b;
+
+.my-theme{
+background-color: $background-body;
+.wrapper {
+   background-color: $background-main;
+
+}
+.aside__container {
+   background-color: $background-aside;
+}
+}

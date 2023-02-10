@@ -1,0 +1,13 @@
+$background-body: #8a8383;
+$background-main: #fcfcfc;
+$background-aside: #86a3b4;
+.main-theme {
+   background-color: $background-body;
+
+   .wrapper {
+      background-color: $background-main;
+   }
+   .aside__container {
+      background-color: $background-aside;
+   }
+}
