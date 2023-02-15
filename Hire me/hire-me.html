@@ -6,64 +6,67 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="css/style.css"> -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
    <title>Offer a job</title>
 </head>
 
-<body>
-   <div class="wrapper">
-      <div class="wrapper__container">
-         <header class="haeder">
-            <h1 class="header__title">Hire me</h1>
-         </header>
+<body class="bg-dark-subtle">
+   <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="container  bg-white">
+         <h1 class="text-center mt-5 ">Hire me</h1>
          <main class="main">
-            <div class="main__container">
-               <h3 class="main__sub-title">Contact information</h3>
-               <div class="main__table">
-                  <table>
+            <div class="ms-3 mt-4">
+               <h3 class="">Contact information</h3>
+               <div class="main__table mt-3 ">
+                  <table class="table table-bordered w-25 border-dark">
                      <tr>
-                        <th class="table__title">Phone</th>
-                        <td class="table__info"><a href="tel:+380978600495">+380978600495</a></td>
+                        <th class="text-center">Phone</th>
+                        <td class="text-center"><a class="text-dark" href="tel:+380978600495">+380978600495</a></td>
                      </tr>
                      <tr>
-                        <th class="table__title">Address</th>
-                        <td class="table__info">Somewhere in Ukraine</td>
+                        <th class="text-center ">Address</th>
+                        <td class="text-center ">Somewhere in Ukraine</td>
                      </tr>
                   </table>
                </div>
                <form class="form" action="">
-                  <fieldset class="form__fieldset">
-                     <legend class="form__title">Contact form</legend>
+                  <fieldset class="border border-dark rounded mb-5 pb-5 ">
+                     <legend class="text-center fw-bold">Contact form</legend>
 
-                     <div class="email">
-                        <label for="enter-email">Email <span>*</span>:</label>
-                        <input id="enter-email" type="email" name="email" placeholder="Email" invalid>
-                        <span class="email__error">Це поле має містити E-Mail у форматі example@gmail.com</span>
+                     <div class="email mb-3 ms-3 has-validation">
+                        <label for="exampleInputEmail1" class="fw-semibold">Email 
+                           <span class="text-danger">*</span>:
+                        </label>
+                        <input class="form-control mt-2 w-25"  id="exampleInputEmail1 type="email" name="email" placeholder="Email" required>
+                       
+                        <span class="invalid-feedback">Це поле має містити E-Mail у форматі example@gmail.com</span>
                      </div>
 
-                     <div class="description">
-                        <label for="enter-comment">Description:</label>
-                        <textarea class="enters-comment" name="enter-comment" id="enter-comment" maxlength="365"
+                     <div class="mb-3 ms-3 has-validation position-relative">
+                        <label for="enter-comment" class="fw-semibold">Description:</label>
+                        <textarea class="w-25 form-control mt-2 enters-comment  " name="enter-comment" rows="5" id="exampleFormControlTextarea1" maxlength="365"
                            placeholder="Напишіть повідомлення"></textarea>
-                        <div class="description-text">
+                        <div class="description-text position-absolute bottom-0 start-0 ms-2">
                            <span class="description-text__current">0</span>
                            /
                            <span class="description-text__total">365</span>
                         </div>
                      </div>
 
-                     <div class="work__type">
-                        <label for="work-type">Work type:</label>
-                        <select id="work-type" name="work-type" required>
-                           <option value=""></option>
+                     <div class="work__type ms-3">
+                        <label class="d-block" for="work-type">Work type:</label>
+                        <select class="mt-1 form-select w-25 border border-secondary rounded" id="work-type" name="work-type" required>
+                           <option selected >Open this select menu</option>
                            <option value="">Full-time</option>
                            <option value="">Remote work</option>
                            <option value="">One-time project</option>
                         </select>
                      </div>
 
-                     <div class="offer__job">
-                        <input type="submit" value="Hire me">
+                     <div class="offer__job mt-4 ms-3">
+                        <input type="submit" class="btn btn-primary" value="Hire me">
                      </div>
                   </fieldset>
                </form>
@@ -83,8 +86,8 @@
          const length = evt.target.value.length
          textCounter.innerText = length
       }
-
    </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"crossorigin="anonymous"></script>
 </body>
 
 </html>

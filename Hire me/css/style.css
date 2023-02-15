@@ -125,17 +125,17 @@ body {
 
 .email input:focus {
   border: 2px solid #4248e7;
-  /* box-shadow: 0px 0px 5px 2px #4248e7; */
+
 }
 
 .email input:invalid:not(:placeholder-shown) {
   border: 2px solid #ed0131;
-  /* box-shadow: 0px 0px 5px 2px #ed0131; */
+
 }
 
 .email input:valid:not(:placeholder-shown) {
   border: 2px solid #0e6245;
-  /* box-shadow: 0px 0px 5px 2px #0e6245; */
+
 }
 
 .email input:invalid:not(:placeholder-shown)+.email__error {
@@ -173,12 +173,12 @@ body {
 
 .description textarea:valid:not(:placeholder-shown) {
   border: 2px solid #0e6245;
-  /* box-shadow: 0px 0px 5px 2px #0e6245; */
+
 }
 
 textarea:focus {
   border: 2px solid #4248e7;
-  /* box-shadow: 0px 0px 5px 2px #4248e7; */
+
 }
 
 .work__type {
@@ -204,7 +204,7 @@ textarea:focus {
 
 .work__type select:invalid {
   border: 2px solid #ed0131;
-  /* box-shadow: 0px 0px 5px 2px #ed0131; */
+
 }
 
 .work__type select:valid {
