@@ -1,0 +1,33 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+
+}
+.row{
+   width: 500px;
+}
+.row__title{
+text-align: center;
+}
+.row__item {
+   width: 500px;
+   border: 1px solid #000;
+   margin: 20px 0;
+   text-align: center;
+}
+.row__name {
+font-weight: 700;
+margin: 10px 0;
+}
+.row__html a {
+color: blue;
+}
+.row__description {
+}
